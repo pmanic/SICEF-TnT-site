@@ -1,0 +1,84 @@
+@import "../variables";
+
+.toolbar{
+    width:100%;
+    height: 56px;
+    position:fixed;
+    z-index: 50;
+}
+
+.toolbar-background{
+    width:100%;
+    height: 56px;
+    position:fixed;
+    background: rgba(15,15,15,0.6) !important;
+    //filter: blur(1px);
+    z-index: -1;
+}
+
+.toolbar-nav{
+    display:flex;
+    height: 100%;
+    align-items:center;
+    justify-content: center;
+    padding:0 1ren;
+    background: rgba(15,15,15,0.6) !important;
+}
+
+.toolbar-logo{
+    height: 40px;
+    margin: 0px 0 0 5px;
+    padding-left: 10px;
+}
+
+.toolbar-nav-items{
+    ul{
+        list-style: none;
+        display:flex;
+        flex-direction: row;
+        padding-top: 10px;
+    }
+
+    a{
+        color:$white;
+        text-decoration: none;
+        margin-top:10px;
+        font-size: 17px;
+        padding-right: 20px;
+        transition: 0.5s;
+    }
+}
+
+.spacer{
+    flex:1;
+}
+
+.toolbar-nav-items a:hover,
+.toolbar-nav-items a:active{
+    color:$tntcolor;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+@media (max-width: 768px){
+    .toolbar-nav-items{
+        display:none;
+    }
+    .spacer1{
+        flex:1;
+    }
+    .toolbar-logo{
+        flex:1;
+        margin-left: -40px;
+    }
+}
+
+@media (min-width: 769px){
+    .toolbar-logo{
+        margin-left:5px;
+    }
+    .spacer1{
+        display:none;
+    }
+}
+

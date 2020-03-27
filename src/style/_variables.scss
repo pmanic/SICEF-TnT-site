@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+$font: 'Open Sans', sans-serif;
+$font2:  'Poppins', sans-serif;
+$tntcolor: rgba(255,182,19,1);
+$tntcolor2: rgba(255,182,19,0.5); //50% opacity - ista boja 
+$tntcolor3:rgba(112, 87, 33, 0.5); //malo tamnija nego prethodna
+$black: rgba(15,16,16,1);
+$white: rgba(245,245,245,1);
+
+:export {
+    tntcolor:$tntcolor;
+  }

@@ -1,0 +1,39 @@
+@import "../variables";
+
+.sponsors-page-area{
+        display:flex;
+        flex-direction: column;
+        //height: max-content;
+        //background-color: rgba($color: #000000, $alpha: 1.0);
+        background:url('../../assets/pattern2.jpg');
+        //text-align: center;
+        background-repeat: repeat;
+        //background-position: center;
+        //background-size: 100vh 100vh !important;
+        z-index: 50;
+
+        .sponsors-header{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            //width: 100%;
+            height: 250px !important;
+            background:linear-gradient($tntcolor,$tntcolor);
+
+            .naslov{
+                font-size: 64px;
+                margin-bottom: -40px;
+                text-align: center !important;
+                color:$white;
+            }
+        }
+
+        .sponsors-page-container{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            max-width: 1000px;
+            margin:0 auto 0 auto;
+        }
+}

@@ -1,0 +1,33 @@
+1. Dodaj gatsby npm:
+
+	npm install -g gatsby-cli
+
+2. Dodaj sass npm:
+
+	npm install --save node-sass gatsby-plugin-sass
+
+3. Instaliraj gatsby-plugin-react-svg 
+
+	npm install --save gatsby-plugin-react-svg
+
+4. Ako dodje do nekih problema tipa "operation not permitted"..
+   probaj sa komandom gatsby clean
+
+5. Za animacije 
+
+	npm install animate.css --save
+
+6. Za slajder - sponzori
+
+	https://reactjsexample.com/infinite-carousel-for-react/
+	https://g787543.github.io/infinite-react-carousel/
+
+7. Za counter
+
+	npm install moment
+	
+8. Galerija
+
+	npm install react-fb-image-grid
+	https://github.com/Expertizo/react-fb-image-grid
+	

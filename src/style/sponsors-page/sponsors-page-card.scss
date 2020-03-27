@@ -1,0 +1,100 @@
+@import "../variables";
+
+.sponsors-page-card{
+    //width: 800px;
+    display:grid;
+    height: 250px;
+    width: fit-content;
+    margin-bottom: 30px;
+    background-color: $white;
+    border-radius: 60px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+    overflow: hidden;
+    grid-template-columns: 60px 370px 370px;
+    grid-template-rows: auto;
+    //box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.15);
+    grid-template-areas: 
+    "slika1 slika2 tekst";
+
+    .drzac-slike-1{
+        grid-area:slika1;
+        box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .drzac-slike-2{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        grid-area:slika2;
+        
+
+        .slika-logo{
+            max-width: 250px;
+            max-height: 200px;
+        }
+    }
+
+    .drzac-teksta{
+        display:flex;
+        grid-area:tekst;
+        background:linear-gradient(to right,$white,rgb(228, 228, 228));
+        align-items: center;
+        justify-content: space-around;
+        
+
+        .tekst{
+            font-size: 14px !important;
+            padding:10px 10px 10px 10px;
+            //background:linear-gradient($white,rgb(228, 228, 228));
+            
+        }
+    }
+}
+
+@media (max-width:850px){
+    .sponsors-page-card{
+        height: fit-content;
+        border-radius: 0px;
+        margin-left: 20px;
+        margin-right: 20px;
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+        grid-template-columns: 250px;
+        grid-template-rows: 60px 200px 250px;
+        grid-template-areas: 
+        "slika1"
+        "slika2"
+        "tekst";
+
+        .drzac-slike-1{
+            display:flex;
+            align-items: center;
+            transform: rotate(-180deg);
+
+            .slika-tip-sponzora{
+                transform: rotate(90deg);
+                margin-left: 95px;
+            }
+        }
+
+        .drzac-slike-2{
+            //margin-top: -450px;
+
+            .slika-logo{
+                max-width: 200px;
+                max-height: 200px;
+            }
+        }
+
+        .drzac-teksta{
+            align-items: unset;
+            padding:10px 10px 10px 10px;
+            background:linear-gradient($white,rgb(228, 228, 228));
+            overflow-y: scroll;
+            -webkit-overflow-scrolling: auto;
+            -webkit-overflow-scrolling: touch; 
+            scrollbar-width: thin;
+        }
+    }
+}

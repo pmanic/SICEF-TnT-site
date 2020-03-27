@@ -1,0 +1,32 @@
+@import "../variables";
+
+.gallery-area{
+    height: fit-content;
+    background:url('../../assets/pattern2.jpg');
+    background-repeat: repeat;
+    text-align: center;
+    padding: 70px 0 100px 0;
+    z-index: 50;
+    color:$black;
+}
+
+.gallery-area-naslov{
+    font-size: 64px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+.linija{
+    margin-left: auto;
+        margin-right: auto;
+        margin-top:40px;
+        margin-bottom: 40px;
+        width: 150px;
+        height: 1px;
+        background-color: $tntcolor;
+}
+
+@media (max-width: 768px) {
+    .gallery-area{
+        padding: 30px 0 60px 0;
+    }
+}

@@ -1,0 +1,49 @@
+{
+  "name": "gatsby-starter-hello-world",
+  "private": true,
+  "description": "A simplified bare-bones starter for Gatsby",
+  "version": "0.1.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "dependencies": {
+    "@brainhubeu/react-carousel": "^1.10.51",
+    "gatsby": "^2.19.7",
+    "gatsby-plugin-react-svg": "^3.0.0",
+    "gatsby-plugin-sass": "^2.1.28",
+    "infinite-react-carousel": "^1.2.10",
+    "jquery": "^3.4.1",
+    "node-sass": "^4.13.1",
+    "react": "^16.12.0",
+    "react-carousel-slider": "^2.0.13",
+    "react-dom": "^16.12.0",
+    "react-fb-image-grid": "^0.1.5",
+    "react-leaf-carousel": "^2.0.0",
+    "react-responsive-carousel": "^3.1.51",
+    "react-styled-carousel": "^0.5.1",
+    "react-styled-carousel-alt": "0.0.3",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "gatsby-plugin-root-import": "^2.0.5",
+    "prettier": "^1.19.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  "optionalDependencies": {
+    "bufferutil": "^4.0.1",
+    "utf-8-validate": "^5.0.2"
+  }
+}

@@ -1,0 +1,79 @@
+@import "../variables";
+
+.signin-area{
+    height: fit-content;
+    background:linear-gradient(rgba(87, 87, 87, 0),rgba(0, 0, 0, 0.8)),url('../../assets/pattern4.jpg');
+    background-repeat: repeat;
+    display: flex;
+    flex-direction: column;
+    color:$white;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    //max-width: 960px;
+    padding: 70px 0 100px 0;
+}
+
+.signin-area-tekst{
+    max-width: 960px;
+    color:$white;
+    text-align: center;
+    z-index: 2;
+
+    .naslov{
+        font-size: 64px;
+        margin-bottom: 0px;
+    }
+
+    .linija{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top:40px;
+        margin-bottom: 40px;
+        width: 150px;
+        height: 1px;
+        background-color: $tntcolor;
+    }
+    .tekst{
+        font-size: 24px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+.signin-area-dugme{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin:100px auto 0 auto;
+    background-color: $tntcolor;
+    color:$black;
+    font-size: 20px;
+    border: none;
+    width: 150px;
+    height: 60px;
+    border-radius: 30px;
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.15);
+    transition: 0.5s;
+    :focus{outline:0 !important;}
+}
+
+.signin-area button:hover,
+.signin-area button:active{
+    filter:brightness(60%);
+    transition: 1s;
+    text-decoration: none;
+    
+}
+
+@media (max-width: 768px) {
+    .signin-area{
+        padding: 30px 0 60px 0;
+    }
+    .signin-area-dugme{
+        margin-top: 50px;
+    }
+    .tekst{
+        font-size: 21px !important;
+    }
+}
